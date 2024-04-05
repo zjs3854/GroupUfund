@@ -1,0 +1,18 @@
+
+<h2 id="NOTW" class="NOTW" style="font-size: 20px;">Need Spotlight:</h2>
+<span *ngIf="need?.expireDate">Expire Date: {{ need?.expireDate | date:'short' }}</span>
+<div *ngIf="!isnotw()">
+  <label for="spotlight-duration">Set Spotlight Duration(Days):</label>
+  <select [(ngModel)]="selectedNumber">
+    <option *ngFor="let number of numbers" [value]="number">{{ number }}</option>
+  </select>
+  <br>
+  <button (click)="setNeedOfWeek()">Add to Need Spotlight</button>
+</div>
+<div *ngIf="isnotw()">
+  <!-- Text box to show the spotlight duration -->
+  
+  <button (click)="removeNeedOfWeek()">Remove from Need Spotlight</button>
+</div>
+<br>
+

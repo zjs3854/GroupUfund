@@ -1,0 +1,42 @@
+
+<div class="login-container">
+  <div class="login-info">
+    <h2>Login:</h2>
+    <div class="login">
+      <form (ngSubmit)="login()">
+        <div class="username-field">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" [(ngModel)]="username" required>
+        </div>
+        <div class="password-field">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" [(ngModel)]="password" required>
+        </div>
+        <div class="login-button">
+          <button type="submit">Login</button>
+        </div>
+      </form>
+      <div class="login-register">
+        <p>Don't have an account? Join the community! </p>
+        <p><button routerLink="/register">Register Now!</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="our-overall">
+    <div class="our-mission-overall">
+      <h2>Our Mission:</h2>
+      <p>Empowering Action, Building Community: At IceCaps, we believe everyone has the power to fight climate change.
+        Our mission is to bridge the gap between passionate individuals and impactful organizations. We connect you with the world's leading climate action groups, making it easier than ever to get involved.
+        Together, we're building a vibrant community of supporters, united in our fight for a sustainable future.
+      </p>
+    </div>
+    <div class="our-team-overall">
+      <h2>Meet the Team:</h2>
+      <p>Logan Mui (Team Coordinator)</p>
+      <p>Joven Symington (Requirements Coordinator)</p>
+      <p>Jolin Qiu (Configuration Coordinator)</p>
+      <p>Zach Szelc (Design Coordinator)</p>
+      <p>Aidan Henderson (Quality Coordinator)</p>
+    </div>
+  </div>
+</div>

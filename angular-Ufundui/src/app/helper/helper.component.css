@@ -1,0 +1,11 @@
+
+.helpercontainer{
+    z-index: 1;
+    display: flex;
+}
+header{
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    flex-direction: row;
+}

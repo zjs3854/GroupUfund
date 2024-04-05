@@ -1,0 +1,24 @@
+
+<div class="registration-container">
+  <div class="register-overall">
+    <h2>Registration:</h2>
+    <form (ngSubmit)="register()">
+      <div class="form-group">
+        <div class="username-field">
+          <label for="new-username">Username:</label>
+          <input type="text" id="new-username" name="new-username" [(ngModel)]="username" max="50" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="password-field">
+          <label for="new-password">Password:</label>
+          <input type="password" id="new-password" name="new-password" [(ngModel)]="password" max="50" required>
+        </div>
+      </div>
+      <div class="register-movement">
+        <button type="submit">Register</button>
+        <button type="submit" (click)="goToLogin()" >Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>

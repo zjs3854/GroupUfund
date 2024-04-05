@@ -1,0 +1,93 @@
+
+<button type="button" (click)="goToFundBasket()">Go to Fund Basket</button>
+<button style="position: absolute; top: 60px; right: 10px; padding: 10px 10px; font-size: 16px;" type="submit" (click)="goToBlog()">Blog</button>
+<button style="position: absolute; top: 10px; right: 10px; padding: 10px 20px; font-size: 16px;" type="submit" (click)="signOut()">Sign Out</button>
+<div>
+  <div>
+      <label for="name-search">Name Search</label>
+      <br>
+      <input type="text" placeholder ="Name" id="name-search" #namesearch>
+      <button type="button" class="searchbar" (click)="getNeedByName(namesearch.value)">Search</button>
+  </div>
+  <br>
+  <label id="searchresults" class="searchresults">Search Results:</label>
+  <div *ngIf="!hasSearchedNeeds()">No Search Results</div>
+  <div *ngIf="hasSearchedNeeds()">
+    <ol class = "searchedneed">
+      <li *ngFor="let need of searchedNeeds">
+        <div>
+          <span>Name: {{ need.name }}</span>
+          <br>
+          <span>Description: {{ need.description }}</span>
+          <br>
+          <span>Quantity: {{ absoluteDisplay(need.quantity) }} {{isExcessDisplay(need)}}</span>
+          <br>
+          <span>Price: {{ need.price }}</span>
+          <br>
+          <form>
+          <button type="submit" (click)="addToFundBasket(need)">Add</button>
+          <button type="submit" (click)="removeFromFundBasket(need)">Remove</button>
+          </form>
+        </div>
+        <br>
+      </li>
+    </ol>
+  </div>
+</div>
+  
+<h2>Need Spotlight:</h2>
+<!-- If there is no Needs in the spotlight display this -->
+<div *ngIf="!hasNeedOfWeek()">No current Needs in the spotlight</div>
+
+<!-- If there are Needs in the spotlight display this -->
+<div *ngIf="hasNeedOfWeek()">
+  <ol class="needs">
+    <ng-container *ngFor="let need of needs; let i = index">
+      <!-- Check if the current need is the Need of the Week (notw) -->
+      <ng-container *ngIf="need.notw">
+        <!-- Use ngIf to display only the current need based on an index -->
+        <li *ngIf="currentNeedIndex === i">
+          <div>
+            <span>Name: {{ need.name }}</span>
+            <br>
+            <span>Description: {{ need.description }}</span>
+            <br>
+            <span>Quantity: {{ absoluteDisplay(need.quantity) }} {{isExcessDisplay(need)}}</span>
+            <br>
+            <span>Price: {{ need.price }}</span>
+            <br>
+            <form>
+              <button type="submit" (click)="addToFundBasket(need)">Add</button>
+              <button type="submit" (click)="removeFromFundBasket(need)">Remove</button>
+            </form>
+          </div>
+          <br>
+        </li>
+      </ng-container>
+    </ng-container>
+  </ol>
+</div>
+
+
+<h2>Cupboard</h2>
+  <div *ngIf="!hasNeeds()">No Needs to display!</div>
+  <div *ngIf="hasNeeds()">
+    <ul>
+      <li *ngFor="let need of needs">
+        <div>
+          <span>Name: {{ need.name }}</span><br>
+          <span>Description: {{ need.description }}</span><br>
+          <span>Quantity: {{ absoluteDisplay(need.quantity) }} {{isExcessDisplay(need)}}</span><br>
+          <span>Price: {{ need.price }}</span><br>
+          <span>ID: {{ need.id }}</span><br>
+          <button type="submit" (click)="addToFundBasket(need)">Add</button>
+          <button type="submit" (click)="removeFromFundBasket(need)">Remove</button>
+        </div>
+        <br>
+      </li>
+    </ul>
+  </div>
+
+  
+  
+  

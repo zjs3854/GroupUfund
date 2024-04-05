@@ -1,0 +1,88 @@
+
+  <h3>Add Need:</h3>
+  <button style="position: absolute; top: 60px; right: 10px; padding: 10px 10px; font-size: 16px;" type="submit" (click)="goToBlog()">Blog</button>
+  <button style="position: absolute; top: 10px; right: 10px; padding: 10px 10px; font-size: 16px;" type="submit" (click)="signOut()">Sign Out</button>
+
+  <div>
+    <label for="new-need-name">Need Name: </label>
+    <input  id="new-need-name" ngModel="new_name" maxlength="25" #newNeedName />
+  </div>
+  <div>
+    <label for="new-need-description">Description: </label>
+    <input id="new-need-description" ngModel="new_description" maxlength="150" #newNeedDescription />
+  </div>
+  <div>
+    <label for="new-need-quantity">Quantity: </label>
+    <input id="new-need-quantity" type="number" ngModel="new_quantity" max="10000" #newNeedQuantity />
+  </div>
+  <div>
+    <label for="new-need-price">Price: </label>
+    <input id="new-need-price" type="number" step="0.01" ngModel="new_price" max="10000" #newNeedPrice />
+  </div>
+  <div>
+    <button type="button" class="add-button" (click)="add(newNeedName.value, newNeedDescription.value, newNeedQuantity.value, newNeedPrice.value); newNeedName.value=''; newNeedDescription.value=''; newNeedQuantity.value=''; newNeedPrice.value=''">
+      Add Need
+    </button>
+  </div>
+<br>
+
+
+<div>
+  <h3>Search Need:</h3>
+  <div>
+    <label for="name-search">Name Search</label>
+
+    <br>
+
+    <input type="text" placeholder ="Name" id="name-search" #namesearch>
+    <button type="button" class="searchbar" (click)="getNeedByName(namesearch.value)">Search</button>
+  </div>
+
+  <br>
+  <label id="searchresults" class="searchresults">Search Results:</label>
+  <div *ngIf="!hasSearchedNeeds()">No Search Results</div>
+  <div *ngIf="hasSearchedNeeds()">
+    <ol class = "searchedneed">
+    <li *ngFor="let need of searchedNeeds">
+      <a routerLink="/detail/{{need.id}}">
+        <span class="badge"></span> {{need.name}}
+      </a>
+    </li>
+    </ol>
+  </div>
+
+</div>
+
+<h2 id="cupboard" class="cupboard">Need Spotlight:</h2>
+<!-- If there is no Needs in the spotlight display this -->
+<div *ngIf="!hasNeedOfWeek()">No current Needs in the spotlight</div>
+
+<!-- If there are Needs in the spotlight display this -->
+<div *ngIf="hasNeedOfWeek()">
+  <ol class="needs">
+    <li *ngFor="let need of getNeedOfTheWeek()">
+      <a routerLink="/detail/{{ need.id }}">
+        <span class="badge"></span> {{ need.name }}
+      </a>
+      <!-- Displaying the expiration date -->
+      <span *ngIf="need.expireDate">Expire Date: {{ need.expireDate | date:'short' }}</span>
+      <span *ngIf="!need.expireDate">Expire Date: Not Set</span>
+    </li>
+  </ol>
+</div>
+ 
+
+<h2 id="cupboard" class="cupboard">Cupboard:</h2>
+<ol class="needs">
+  <li *ngFor="let need of needs">
+    <a routerLink="/detail/{{need.id}}">
+        <span class="badge"></span> {{need.name}}
+      </a>
+  </li>
+</ol>
+
+
+
+
+
+

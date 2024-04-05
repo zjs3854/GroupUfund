@@ -1,0 +1,72 @@
+.login-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.login-info {
+    justify-content: center;
+}
+
+.username-field {
+    padding: 0px 0px 10px 0px;
+}
+
+.username-field label {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.username-field input {
+    width: 125px;
+}
+
+.password-field {
+    padding: 0px 0px 10px 0px;
+    font-size: 18px;
+}
+
+.password-field label {
+    margin-right: 15px;
+}
+
+.password-field input {
+    width: 125px;
+}
+
+.login-button {
+    padding: 0px 0px 10px 0px;
+}
+
+.login-button button {
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.login-register {
+    font-size: 18px;
+}
+
+.login-register button {
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 108px;
+}
+
+.our-overall {
+    justify-content: flex-end;
+}
+
+.our-mission-overall {
+    margin-bottom: 94px;
+}
+
+.our-mission-overall p {
+    font-size: 17px;
+}
+
+.our-team-overall p {
+    font-size: 16px;
+}

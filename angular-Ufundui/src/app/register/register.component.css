@@ -1,0 +1,40 @@
+.registration-container {
+    width: fit-content;
+    margin: auto;
+}
+
+.username-field {
+    padding: 0px 0px 10px 0px;
+}
+
+.register-overall {
+    align-self: center;
+}
+
+.username-field label {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.username-field input {
+    width: 125px;
+}
+
+.password-field {
+    padding: 0px 0px 15px 0px;
+    font-size: 18px;
+}
+
+.password-field label {
+    margin-right: 15px;
+}
+
+.password-field input {
+    width: 125px;
+}
+
+.register-movement button {
+    margin-right: 85px;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

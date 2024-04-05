@@ -1,0 +1,88 @@
+<div class="background">
+<div>
+    <h3>Add Post:</h3>
+    <button style="position: absolute; top: 10px; right: 10px; padding: 10px 20px; font-size: 16px;" type="submit" (click)="goHome()">Home</button>
+    <div>
+      <label for="new-post-description">Body: </label>
+      <input id="new-post-description" ngModel="new_description" maxlength="1000" #newPostDescription />
+    </div>
+    <div>
+      <button type="button" class="add-button" (click)="add(newPostDescription.value)">
+        Post!
+      </button>
+    </div>
+  </div>
+  
+  <br>
+  
+<h2>My posts:</h2>
+<ul class="posts">
+    <li *ngFor="let post of getUserPosts().slice().reverse()" class="post-item">
+
+      <label>Author: {{ post.OPUsername }}</label>
+      <br>
+      <label>{{ post.description }}</label>
+      <br>
+      <label >Like's: {{post.likes}} </label>
+      <!-- <button type="button" (click)="likePost(post)">Like</button> -->
+      <button *ngIf="checkUserPosts(post)" type="button" (click)="editPost(post)">Edit</button>
+      <br>
+      <button *ngIf="checkUserPosts(post)" type="button" (click)="deletePost(post)">Delete Post</button>
+    </li>
+  </ul>
+
+  <div>
+    <h3>Search Post:</h3>
+    <div>
+      <label for="name-search">Name Search</label>
+  
+      <br>
+  
+      <input type="text" placeholder ="Username" id="name-search" #namesearch>
+      <button type="button" class="searchbar" (click)="getPostByName(namesearch.value)">Search</button>
+  </div>
+  
+  <br>
+    <label id="searchresults" class="searchresults">Search Results:</label>
+    <ol class = "searchedpost">
+      <li *ngFor="let post of searchedPosts.slice().reverse()">
+        <label>Author: {{post.OPUsername}}</label>
+        <br>
+        <label>{{post.description}}</label>
+        <br>
+        <label >Like's: {{post.likes}} </label>
+        <button *ngIf="!checkUserPosts(post) && !checkLiked(post)"type="button" (click)="likePost(post)">Like</button>
+        <button *ngIf="!checkUserPosts(post) && checkLiked(post)"type="button" (click)="unlikePost(post)">Unlike</button>
+        <br>
+        <button *ngIf="checkUserPosts(post)" type="button" (click)="editPost(post)">Edit</button>
+        <br>
+      <button *ngIf="checkUserPosts(post) || hasAdmin()" type="button" (click)="deletePost(post)">Delete Post</button>
+      </li>
+    </ol>
+  </div>
+  
+<h2 id="cupboard" class="cupboard">Blog posts:</h2>
+  <ul class="posts">
+    <li *ngFor="let post of posts.slice().reverse()" class="post-item">
+      <label>Author: {{ post.OPUsername }}</label>
+      <br>
+      <label>{{ post.description }}</label>
+      <br>
+      <label >Like's: {{post.likes}} </label>
+      
+      <button *ngIf="!checkUserPosts(post) && !checkLiked(post)"type="button" (click)="likePost(post)">Like</button>
+      <button *ngIf="!checkUserPosts(post) && checkLiked(post)"type="button" (click)="unlikePost(post)">Unlike</button>
+      <br>
+
+      <button *ngIf="checkUserPosts(post)" type="button" (click)="editPost(post)">Edit</button>
+      <br *ngIf="checkUserPosts(post)">
+      <button *ngIf="checkUserPosts(post) || hasAdmin()" type="button" (click)="deletePost(post)">Delete Post</button>
+    </li>
+  </ul>
+</div>
+  
+  
+  
+  
+  
+  

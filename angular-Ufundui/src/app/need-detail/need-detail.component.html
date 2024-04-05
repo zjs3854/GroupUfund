@@ -1,0 +1,34 @@
+
+<button style=" padding: 5px 10px; font-size: 14px;" type="button" (click)="goBack()">Homepage</button>
+<div *ngIf="need">
+    <h2>{{ need.name | uppercase }} Details</h2>
+    <div>
+      <label for="need-name">Need Name:</label>
+      <input id="need-name" [(ngModel)]="need.name" maxlength="25" placeholder="Name">
+    </div>
+    <div>
+      <label for="need-description">Description:</label>
+       <!-- Use textarea for a larger input field  -->
+      <textarea id="need-description" [(ngModel)]="need.description" maxlength="150" placeholder="Description"></textarea>
+    </div>
+    <div>
+      <label for="need-quantity">Quantity:</label>
+      <input id="need-quantity" [(ngModel)]="need.quantity" type="number" max="10000" placeholder="Quantity">
+    </div>
+    <div>
+      <label for="need-price">Price:</label>
+      <input id="need-price" [(ngModel)]="need.price" type="number" step="0.01" max="10000" placeholder="Price">
+    </div>
+    <div>
+        <app-need-of-the-week></app-need-of-the-week>
+      
+    </div>
+    
+    <div id="admin-buttons">
+    <button type="button" (click)="save()">save</button>
+    <button type="button" (click)="deleteNeed()">delete</button>
+    
+    </div>
+</div>
+
+  

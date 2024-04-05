@@ -1,0 +1,38 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #162b41;
+    display:flex;
+}
+
+app-root {
+    width: 100%;
+}
+
+a {
+    color:#f76902;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+a:visited {
+    color:#44453a
+}
+
+a:hover {
+    color: #7B73EF 
+}
+
+button {
+    cursor: pointer;
+}
+
+html {
+    position: flex; 
+    background-image: linear-gradient(to bottom right, #1387FF, #ABD4FF);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: vmax;
+    height: vmax;
+}
