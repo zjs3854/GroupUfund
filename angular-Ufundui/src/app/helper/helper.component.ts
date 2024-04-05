@@ -38,7 +38,7 @@ export class HelperComponent implements OnInit{
     });
     setInterval(() => {
       this.showNextNeed();
-    }, 50); 
+    }, 3500); 
   }
 
   onSelect(need: Need): void{
