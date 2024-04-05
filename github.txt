@@ -1,0 +1,77 @@
+commit ae3efa43798d65a1805f6f9325ee2f5b2ce83064
+Author: jhs8083 <jhs8083@rit.edu>
+Date:   Tue Feb 13 20:35:14 2024 -0500
+
+    Added name to DesignDoc.md
+
+commit 2047e79b351c48626b77ef3f689ab95f0b13a0e3
+Author: Logan Mui <111836519+lrm2022@users.noreply.github.com>
+Date:   Tue Feb 13 20:33:01 2024 -0500
+
+    It didn't newline before oops
+
+commit 0615ddeab3d3dbcae0c9ce487f2490a24f83498b
+Author: Logan Mui <111836519+lrm2022@users.noreply.github.com>
+Date:   Tue Feb 13 20:32:04 2024 -0500
+
+    Added name
+
+commit 8f41f56160bca1316f5377439557ca13ba293946
+Author: ath7729 <123974408+ath7729@users.noreply.github.com>
+Date:   Tue Feb 13 16:34:19 2024 -0500
+
+    Added Aidan Henderson to readme
+
+commit f013c59dd146732db94335999c28d6941796375a
+Author: Jolin Qiu <qiujolin1@gmail.com>
+Date:   Tue Feb 13 14:09:09 2024 -0500
+
+    added Jolin Qiu to readme
+
+commit abab0bf9b0ce7b5c8de0eee563ed3ba5dd9cf498
+Author: jhs8083 <jhs8083@rit.edu>
+Date:   Tue Feb 13 13:53:53 2024 -0500
+
+    Added name to the README file
+
+commit 30302960786cdb5e4599ce1e68a923f90698fe30
+Author: zjs3854 <zjs3854@rit.edu>
+Date:   Tue Feb 13 09:42:45 2024 -0500
+
+    Added name to README.md
+
+commit 8dafa74459d28b5046e786e6d2546212f0f8a63a
+Author: Logan Mui <111836519+lrm2022@users.noreply.github.com>
+Date:   Tue Feb 13 09:03:24 2024 -0500
+
+    Space for joven :3
+
+commit 30bcd907aa5a9af2f0a940e142b2330b49dab83b
+Author: ath7729 <123974408+ath7729@users.noreply.github.com>
+Date:   Tue Feb 13 09:02:35 2024 -0500
+
+    Aidan
+
+commit eef6f86a9065d722eea7feb6dbd71fa948f04972
+Author: zjs3854 <124389987+zjs3854@users.noreply.github.com>
+Date:   Tue Feb 13 09:01:20 2024 -0500
+
+    Update DesignDoc.md
+
+commit 85d009c4b30e76cd7bd5945838d6f23ffb552e1b
+Author: Jolin Qiu <101295162+jq2472@users.noreply.github.com>
+Date:   Tue Feb 13 08:59:25 2024 -0500
+
+    Added Jolin Qiu to DesignDoc.md
+
+commit 5bc947f0b28748dc31482ba55addf224a1c10a1e
+Author: Logan Mui <111836519+lrm2022@users.noreply.github.com>
+Date:   Tue Feb 13 08:58:37 2024 -0500
+
+    Adding my name to design doc
+
+commit 065e36958fa0d3fa5247ab56bff4c92782518d7d
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Tue Feb 13 13:55:34 2024 +0000
+
+    Initial commit

@@ -1,0 +1,16 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.needs-box {
+    border: 1px solid black;
+}
+
+.box-title > h3 {
+    margin: 0;
+}
+
+.need {
+    padding: 4px 0;
+}

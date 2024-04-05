@@ -1,0 +1,11 @@
+<div *ngIf="need">
+    <h2>{{need.name | uppercase}} Details</h2>
+    <div>id: {{need.id}}</div>
+    <div>description: {{need.description}}</div>
+    <div>quantity: {{need.quantity}}</div>
+    <div>price: {{need.price}}</div>
+    <div>
+            <label for="need-name">Need title:</label>
+            <input id="need-name" [(ngModel)]="need.name" placeholder="title">
+    </div>
+</div>

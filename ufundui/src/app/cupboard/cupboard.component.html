@@ -1,0 +1,10 @@
+<h2>Needs List</h2>
+
+<ul>
+  <li *ngFor="let need of needs">
+    <strong>Name:</strong> {{ need.name }} <br>
+    <strong>Description:</strong> {{ need.description }} <br>
+    <strong>Quantity:</strong> {{ need.quantity }} <br>
+    <strong>Price:</strong> {{ need.price | currency }} <br>
+  </li>
+</ul>

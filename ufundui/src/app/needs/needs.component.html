@@ -1,0 +1,15 @@
+<h2> Cupboard </h2>
+<!--Title and Printing the Components of the Cupboard, as well buttons to get more details of each need-->
+<ul class="needs">
+    <li *ngFor="let need of needs">
+    <button [class.selected]="need === selectedNeed" type="button" (click)="onSelect(need)">
+        <span class="badge">{{need.id}}</span>
+        <span class="name">{{need.name}}</span>
+        <span class="description">{{need.description}}</span>
+        <span class="quantity">{{need.quantity}}</span>
+        <span class="number">{{need.price}}</span>
+    </button>
+    </li>
+</ul>
+<app-need-detail [need]="selectedNeed"></app-need-detail>
+    
