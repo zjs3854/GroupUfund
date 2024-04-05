@@ -1,17 +1,15 @@
-C:\Users\zachs\OneDrive\Desktop\RIT Coding\SWEN\Project\team-project-2235-swen-261-02-2b-icecaps\ufundapi\src\main\java\com\needs\api\needsapi\model\Need.java
-C:\Users\zachs\OneDrive\Desktop\RIT Coding\SWEN\Project\team-project-2235-swen-261-02-2b-icecaps\ufundapi\src\main\java\com\needs\api\needsapi\persistence\NeedDAO.java
-C:\Users\zachs\OneDrive\Desktop\RIT Coding\SWEN\Project\team-project-2235-swen-261-02-2b-icecaps\ufundapi\src\main\java\com\needs\api\needsapi\persistence\NeedFileDAO.java
-C:\Users\zachs\OneDrive\Desktop\RIT Coding\SWEN\Project\team-project-2235-swen-261-02-2b-icecaps\ufundapi\src\main\java\com\needs\api\needsapi\NeedsApiApplication.java
-C:\Users\zachs\OneDrive\Desktop\RIT Coding\SWEN\Project\team-project-2235-swen-261-02-2b-icecaps\ufundapi\src\main\java\com\needs\api\needsapi\controller\NeedController.java
-C:\Users\zachs\OneDrive\Desktop\RIT Coding\SWEN\Project\team-project-2235-swen-261-02-2b-icecaps\ufundapi\src\main\java\com\needs\api\needsapi\model\Posts.java
-C:\Users\zachs\OneDrive\Desktop\RIT Coding\SWEN\Project\team-project-2235-swen-261-02-2b-icecaps\ufundapi\src\main\java\com\needs\api\needsapi\persistence\BlogFileDAO.java
-C:\Users\zachs\OneDrive\Desktop\RIT Coding\SWEN\Project\team-project-2235-swen-261-02-2b-icecaps\ufundapi\src\main\java\com\needs\api\needsapi\model\Helper.java
-C:\Users\zachs\OneDrive\Desktop\RIT Coding\SWEN\Project\team-project-2235-swen-261-02-2b-icecaps\ufundapi\src\main\java\com\needs\api\needsapi\persistence\BlogDAO.java
-C:\Users\zachs\OneDrive\Desktop\RIT Coding\SWEN\Project\team-project-2235-swen-261-02-2b-icecaps\ufundapi\src\main\java\com\needs\api\needsapi\persistence\UserFileDAO.java
-C:\Users\zachs\OneDrive\Desktop\RIT Coding\SWEN\Project\team-project-2235-swen-261-02-2b-icecaps\ufundapi\src\main\java\com\needs\api\needsapi\model\User.java
-C:\Users\zachs\OneDrive\Desktop\RIT Coding\SWEN\Project\team-project-2235-swen-261-02-2b-icecaps\ufundapi\src\main\java\com\needs\api\needsapi\controller\AuthenticationController.java
-C:\Users\zachs\OneDrive\Desktop\RIT Coding\SWEN\Project\team-project-2235-swen-261-02-2b-icecaps\ufundapi\src\main\java\com\needs\api\needsapi\model\UserItem.java
-C:\Users\zachs\OneDrive\Desktop\RIT Coding\SWEN\Project\team-project-2235-swen-261-02-2b-icecaps\ufundapi\src\main\java\com\needs\api\needsapi\model\Admin.java
-C:\Users\zachs\OneDrive\Desktop\RIT Coding\SWEN\Project\team-project-2235-swen-261-02-2b-icecaps\ufundapi\src\main\java\com\needs\api\needsapi\persistence\UserDAO.java
-C:\Users\zachs\OneDrive\Desktop\RIT Coding\SWEN\Project\team-project-2235-swen-261-02-2b-icecaps\ufundapi\src\main\java\com\needs\api\needsapi\WebConfig.java
-C:\Users\zachs\OneDrive\Desktop\RIT Coding\SWEN\Project\team-project-2235-swen-261-02-2b-icecaps\ufundapi\src\main\java\com\needs\api\needsapi\controller\BlogController.java
+C:\Users\zachs\OneDrive\Desktop\GitHub\Group-Project-Ufund\GroupUfund\ufundapi\src\main\java\com\needs\api\needsapi\persistence\UserFileDAO.java
+C:\Users\zachs\OneDrive\Desktop\GitHub\Group-Project-Ufund\GroupUfund\ufundapi\src\main\java\com\needs\api\needsapi\model\Helper.java
+C:\Users\zachs\OneDrive\Desktop\GitHub\Group-Project-Ufund\GroupUfund\ufundapi\src\main\java\com\needs\api\needsapi\model\Need.java
+C:\Users\zachs\OneDrive\Desktop\GitHub\Group-Project-Ufund\GroupUfund\ufundapi\src\main\java\com\needs\api\needsapi\NeedsApiApplication.java
+C:\Users\zachs\OneDrive\Desktop\GitHub\Group-Project-Ufund\GroupUfund\ufundapi\src\main\java\com\needs\api\needsapi\controller\BlogController.java
+C:\Users\zachs\OneDrive\Desktop\GitHub\Group-Project-Ufund\GroupUfund\ufundapi\src\main\java\com\needs\api\needsapi\persistence\NeedDAO.java
+C:\Users\zachs\OneDrive\Desktop\GitHub\Group-Project-Ufund\GroupUfund\ufundapi\src\main\java\com\needs\api\needsapi\persistence\BlogDAO.java
+C:\Users\zachs\OneDrive\Desktop\GitHub\Group-Project-Ufund\GroupUfund\ufundapi\src\main\java\com\needs\api\needsapi\WebConfig.java
+C:\Users\zachs\OneDrive\Desktop\GitHub\Group-Project-Ufund\GroupUfund\ufundapi\src\main\java\com\needs\api\needsapi\model\Posts.java
+C:\Users\zachs\OneDrive\Desktop\GitHub\Group-Project-Ufund\GroupUfund\ufundapi\src\main\java\com\needs\api\needsapi\model\UserItem.java
+C:\Users\zachs\OneDrive\Desktop\GitHub\Group-Project-Ufund\GroupUfund\ufundapi\src\main\java\com\needs\api\needsapi\persistence\NeedFileDAO.java
+C:\Users\zachs\OneDrive\Desktop\GitHub\Group-Project-Ufund\GroupUfund\ufundapi\src\main\java\com\needs\api\needsapi\controller\NeedController.java
+C:\Users\zachs\OneDrive\Desktop\GitHub\Group-Project-Ufund\GroupUfund\ufundapi\src\main\java\com\needs\api\needsapi\persistence\BlogFileDAO.java
+C:\Users\zachs\OneDrive\Desktop\GitHub\Group-Project-Ufund\GroupUfund\ufundapi\src\main\java\com\needs\api\needsapi\persistence\UserDAO.java
+C:\Users\zachs\OneDrive\Desktop\GitHub\Group-Project-Ufund\GroupUfund\ufundapi\src\main\java\com\needs\api\needsapi\controller\AuthenticationController.java
